@@ -1,0 +1,76 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px; /* Increased padding for larger header */
+  background-color: #d32f2f; /* Changed to a vibrant red */
+  color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 28px; /* Slightly larger font size */
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.navigation {
+  display: flex;
+  gap: 30px; /* Increased gap between nav items */
+  align-items: center;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navigation a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -7px; /* Slightly lower underline */
+  left: 50%;
+  background-color: white;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navigation a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navigation a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 20px; /* Adjusted padding */
+    gap: 20px;
+  }
+
+  .navigation {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .logo h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+/* Active link style */
+.navigation a.active {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+}
