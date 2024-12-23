@@ -183,7 +183,7 @@ const DocumentCategory = () => {
         {/* Danh mục Người dùng đăng tải */}
         <div className="category">
           <h3 onClick={toggleUserUpload} className={`category-header ${isUserUploadOpen ? 'active' : ''}`}>
-            Người dùng đăng tải
+            Tài liệu khác
             <span className={`arrow ${isUserUploadOpen ? 'down' : ''}`}>▸</span>
           </h3>
           {isUserUploadOpen && (

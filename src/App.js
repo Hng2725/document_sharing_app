@@ -26,7 +26,6 @@ const App = () => {
           <Route path="/upload" element={<DocumentUpload />} />
           <Route path="/document-view" element={<DocumentLayout />} />
           
-          {/* Document viewing route with simplified PDF mapping */}
           <Route
             path="/document/:category/:type"
             element={

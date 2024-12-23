@@ -6,7 +6,7 @@ const Register = () => {
   const [password, setPassword] = useState('');
 
   const handleRegister = () => {
-    fetch('http://localhost:3000/register', {
+    fetch('http://localhost:5000/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -20,8 +20,8 @@ const Register = () => {
         return response.text();
       })
       .then((message) => {
-        alert(message); // Hiển thị thông báo thành công
-        window.location.href = '/login'; // Chuyển hướng đến trang đăng nhập
+        alert(message);
+        window.location.href = '/login';
       })
       .catch((error) => {
         console.error('Lỗi:', error);

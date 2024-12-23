@@ -1,0 +1,206 @@
+/* Container styles */
+.document-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Header styles */
+  .document-header {
+    padding: 1.5rem 0;
+  }
+  
+  .document-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+  }
+  
+  .document-category {
+    color: #666;
+  }
+  
+  /* Document viewer styles */
+  .document-viewer {
+    margin-bottom: 2rem;
+  }
+  
+  .document-iframe {
+    border: none;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Comments section styles */
+  .comments-section {
+    background-color: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .comments-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Comment form styles */
+  .comment-form {
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+  }
+  
+  .required {
+    color: #e53e3e;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    transition: all 0.2s;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+  }
+  
+  .form-textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  .submit-button {
+    background-color: #3182ce;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .submit-button:hover:not(:disabled) {
+    background-color: #2c5282;
+  }
+  
+  .submit-button:disabled {
+    background-color: #cbd5e0;
+    cursor: not-allowed;
+  }
+  
+  /* Comments list styles */
+  .comments-list {
+    margin-top: 2rem;
+  }
+  
+  .comment-item {
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.2s;
+  }
+  
+  .comment-item:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .user-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #ebf4ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.75rem;
+  }
+  
+  .user-avatar span {
+    color: #3182ce;
+    font-weight: 600;
+  }
+  
+  .comment-info {
+    flex: 1;
+  }
+  
+  .user-name {
+    font-weight: 600;
+    color: #2d3748;
+    margin: 0;
+  }
+  
+  .comment-time {
+    font-size: 0.875rem;
+    color: #718096;
+    margin: 0;
+  }
+  
+  .comment-content {
+    color: #4a5568;
+    line-height: 1.5;
+  }
+  
+  .no-comments {
+    text-align: center;
+    padding: 2rem;
+    color: #718096;
+    font-style: italic;
+  }
+  
+  /* Loading and error states */
+  .document-loading,
+  .document-error {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .loader {
+    /* Add your loader animation styles here */
+    border: 3px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 3px solid #3182ce;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

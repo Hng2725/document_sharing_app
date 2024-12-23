@@ -6,26 +6,26 @@ function Login() {
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    // Gửi dữ liệu đến server (ví dụ bằng fetch)
-    fetch('http://localhost:3000/login', {
-      method: 'POST',
+    fetch("http://localhost:5000/login", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({ username, password }),
     })
-      .then((response) => response.json())
-      .then((data) => {
+      .then(async (response) => {
+        const data = await response.json();
+        console.log({ data });
         if (data.success) {
-          // Đăng nhập thành công, chuyển hướng hoặc cập nhật giao diện
-          window.location.href = '/dashboard';
+          // Lưu username vào localStorage khi đăng nhập thành công
+          localStorage.setItem('loggedInUser', username);
+          window.location.href = "/";
         } else {
-          // Hiển thị thông báo lỗi
-          alert('Tên đăng nhập hoặc mật khẩu không đúng');
+          alert("Tên đăng nhập hoặc mật khẩu không đúng");
         }
       })
       .catch((error) => {
-        console.error('Lỗi:', error);
+        console.error("Lỗi:", error);
       });
   };
 

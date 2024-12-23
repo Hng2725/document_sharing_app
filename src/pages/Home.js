@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <div style={{backgroundColor: '#eaebc2'}}>
-      <h2 style={{ textAlign: 'center', marginTop: '30px', marginBottom: '30px'}}>Welcome to Document Sharing PTIT</h2>
+      <h2 style={{ textAlign: 'center', marginTop: '30px', marginBottom: '30px'}}>Chào mừng quay trở lại Document Sharing PTIT</h2>
       <div style={{ width: '80%', margin: '0 auto' }}>
         <Slider {...settings}>
           <div>
@@ -29,7 +29,7 @@ const Home = () => {
           </div>
           <div>
             <img 
-              src="/maxresdefault (1).jpg" 
+              src="/maxresdefault (1).jpg"  
               alt="Image 2" 
               style={{ width: '100%', height: 'auto', objectFit: 'cover' }} 
             />
