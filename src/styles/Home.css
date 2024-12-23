@@ -28,7 +28,6 @@ h2 {
     transform: scale(1.05);
 }
 
-/* Dots Navigation */
 .slick-dots {
     bottom: 20px;
 }
@@ -64,13 +63,11 @@ h2 {
   flex: 1;
 }
 
-/* Alternate Description Section Layout */
 .home-description-section:nth-child(even) {
   flex-direction: row-reverse;
   background-color: #f0f0f0;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   h2 {
     font-size: 2rem;

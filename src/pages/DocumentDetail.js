@@ -220,7 +220,11 @@ const DocumentDetail = () => {
             <div key={comment.id} className="comment-item">
               <div className="comment-header">
                 <div className="user-avatar">
-                  <span>{comment.userName.charAt(0).toUpperCase()}</span>
+                <span>
+                    {comment && comment.username
+                      ? comment.userName.charAt(0).toUpperCase()
+                      : ""}
+                  </span>
                 </div>
                 <div className="comment-info">
                   <h4 className="user-name">{comment.userName}</h4>
