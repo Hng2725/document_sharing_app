@@ -6,7 +6,7 @@ const mysql = require('mysql2');
 const bcrypt = require('bcrypt');
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // MySQL Connection
 const connection = mysql.createConnection({
